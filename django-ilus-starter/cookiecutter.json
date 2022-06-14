@@ -1,0 +1,17 @@
+{
+    "project_name": "Django ILUS Stater",
+    "repo_name": "{{ cookiecutter.project_name|replace(' ', '_') }}",
+    "author_name": "Luis Duarte",
+    "email": "info@example.com",
+    "description": "Basic Django project with some security.",
+    "db_engine": ["postgres", "sqlite"],
+    "db_user": "dev",
+    "db_password": "databasepassword",
+    "db_host": "localhost",
+    "db_name": "databasename",
+    "django_login_username": "createsuperuser name",
+    "django_login_password": "createsuperuser pass",
+    "domain_name": "example.com",
+    "license": ["MIT", "Apache", "GPLv3", "No License" ],
+    "current_year": "{% now 'utc', '%Y' %}"
+}

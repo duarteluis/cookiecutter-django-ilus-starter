@@ -1,0 +1,4 @@
+{
+    "repo_app": "Essai cookiecutter",
+    "app_name": "{{ cookiecutter.project_name|replace(' ', '_') }}",
+}
