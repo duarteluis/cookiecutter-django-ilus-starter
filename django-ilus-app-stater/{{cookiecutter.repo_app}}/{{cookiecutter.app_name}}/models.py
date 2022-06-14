@@ -29,13 +29,13 @@ class {{ cookiecutter.model_name }}(models.Model):
     def __unicode__(self):
         { % if cookiecutter.app_type == "UUID" %}
         return f'{self.name} ({self.id}'
-        { % elif cookiecutter.license == "Slug" %}
+        { % elif cookiecutter.app_type == "Slug" %}
         return self.slug
         { % endif %}
 
     def get_absolute_url(self):
         { % if cookiecutter.app_type == "UUID" %}
         return reverse('{{ cookiecutter.app_name }}_{{ cookiecutter.model_name|lower }}_read', args=(self.id, ))
-        { % elif cookiecutter.license == "Slug" %}
+        { % elif cookiecutter.app_type == "Slug" %}
         return reverse('{{ cookiecutter.app_name }}_{{ cookiecutter.model_name|lower }}_read', args=(self.slug, ))
         { % endif %}
