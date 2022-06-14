@@ -4,7 +4,7 @@ from django.utils.translation import gettext_lazy as _
 
 {% if cookiecutter.app_type == "UUID" %}
 import uuid
-{% elif cookiecutter.license == "Slug" %}
+{% elif cookiecutter.app_type == "Slug" %}
 from autoslug import AutoSlugField
 {% endif %}
 
