@@ -1,4 +1,6 @@
 {
-    "repo_app": "Essai cookiecutter",
-    "app_name": "{{ cookiecutter.project_name|replace(' ', '_') }}",
+    "repo_app": "apps",
+    "app_name": "things",
+    "model_name": "Thing",
+    "app_type": ["Standard", "UUID", "Slug"]
 }
