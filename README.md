@@ -23,6 +23,8 @@ Some functionalities are implemented:
 
 ### App folder "django-ilus-app-starter"
 
+cookiecutter https://github.com/duarteluis/cookiecutter-django-ilus-starter.git --directory="django-ilus-app-stater"
+
 A generic app with CRUD functionalities
 
 - Creat object
