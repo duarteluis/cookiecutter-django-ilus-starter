@@ -1,5 +1,5 @@
 from django.db import models
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
 
 {%- if cookiecutter.app_type == "UUID" -%}
